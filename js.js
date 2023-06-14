@@ -1,5 +1,6 @@
 let a = 10;
 const theInputBox = document.getElementById('asdf');
+theInputBox.value = a;
 
 function incrementA() {
   a++;
@@ -11,5 +12,6 @@ function test() {
 }
 
 function resetA() {
-  theInputBox.value = 0;
+  a = 0;
+  theInputBox.value = a;
 }
