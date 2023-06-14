@@ -1,17 +1,7 @@
-let a = 10;
-const theInputBox = document.getElementById('asdf');
-theInputBox.value = a;
+const calculations = document.getElementById('calculator');
 
-function incrementA() {
-  a++;
-  theInputBox.value = a;
-}
-
-function test() {
-  console.log(a);
-}
-
-function resetA() {
-  a = 0;
-  theInputBox.value = a;
+function getCalculations(a, b, c) {
+  const results = a + b + c;
+  console.log(results);
+  calculations.innerText = results;
 }
