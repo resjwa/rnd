@@ -8,8 +8,33 @@
       href="styles.css" />
   </head>
   <body>
-    <p id="calculator"></p>
-    <button onclick="getCalculations(1,2,3)">click here</button>
+    <section>
+      <form
+        action="#"
+        id="userForm"
+        onsubmit="createUser()">
+        <p>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name" />
+        </p>
+        <p>
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age" />
+        </p>
+        <p>
+          <label for="location">Location</label>
+          <input
+            type="text"
+            id="location" />
+        </p>
+        <button type="submit">Create User</button>
+      </form>
+    </section>
+    <p id="userSummary"></p>
   </body>
   <script src="js.js"></script>
 </html>

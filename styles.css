@@ -3,3 +3,6 @@ body {
   color: #333;
   font-size: 1rem;
 }
+label {
+  display: block;
+}

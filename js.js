@@ -1,7 +1,14 @@
-const calculations = document.getElementById('calculator');
+const nameInput = document.getElementById('name');
+const ageInput = document.getElementById('age');
+const locatonInput = document.getElementById('location');
+const summary = document.getElementById('userSummary');
+let user = {};
 
-function getCalculations(a, b, c) {
-  const results = a + b + c;
-  console.log(results);
-  calculations.innerText = results;
+function createUser() {
+  user.name = nameInput.value;
+  user.age = ageInput.value;
+  user.location = locatonInput.value;
+  const userText = `${user.name} is ${user.age} years old and lives in ${user.location}`;
+
+  summary.innerText = userText;
 }
